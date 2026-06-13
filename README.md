@@ -40,6 +40,10 @@ npm run dev
 
 管理员登录地址：https://test.dumpipa.com/admin/login
 
+### API Token 申请
+
+如需API Token，请访问：https://www.dumpipa.com/token
+
 ## 📖 详细文档
 
 - [前端文档](./dumpipa-site-frontend/README.md)
