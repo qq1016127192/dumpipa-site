@@ -21,7 +21,7 @@ npm install
 npm run dev
 ```
 
-访问：http://localhost:5174
+访问：https://test.dumpipa.com
 
 ### 后端
 
@@ -32,6 +32,13 @@ npm run dev
 ```
 
 后端将在 `http://localhost:3001` 启动
+
+### 管理员账号
+
+- **用户名**: admin
+- **密码**: 123456
+
+管理员登录地址：https://test.dumpipa.com/admin/login
 
 ## 📖 详细文档
 
