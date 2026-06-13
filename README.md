@@ -18,20 +18,66 @@ dumpipa-site/
 ```bash
 cd dumpipa-site-frontend
 npm install
+# 创建环境变量文件
+echo "VITE_API_BASE_URL=https://test.dumpipa.com/api" > .env
 npm run dev
 ```
 
 访问：https://test.dumpipa.com
+
+#### 前端环境变量配置
+
+创建 `.env` 文件并配置以下内容：
+
+```env
+VITE_API_BASE_URL=https://test.dumpipa.com/api
+```
 
 ### 后端
 
 ```bash
 cd dumpipa-site-backend
 npm install
+# 复制环境变量示例文件
+cp env.plan-b.example .env
+# 编辑.env文件，配置数据库和主站API地址
 npm run dev
 ```
 
 后端将在 `http://localhost:3001` 启动
+
+#### 环境变量配置
+
+创建 `.env` 文件并配置以下内容：
+
+```env
+# 服务器配置
+PORT=3001
+NODE_ENV=production
+
+# 主站API地址
+MAIN_SITE_API_URL=https://dump.dumpipa.com/api
+
+# 主站Token（从 https://www.dumpipa.com/token 获取）
+MAIN_SITE_TOKEN=your_token_here
+
+# 数据库配置
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=dumptest
+DB_PASSWORD=Y5bWSzTWjRS4CbB2
+DB_NAME=dumptest
+
+# JWT配置
+JWT_SECRET=site-backend-secret-key
+JWT_EXPIRES_IN=7d
+
+# CORS配置
+CORS_ORIGIN=https://test.dumpipa.com,http://test.dumpipa.com
+
+# 日志配置
+LOG_LEVEL=info
+```
 
 ### 管理员账号
 
