@@ -1,0 +1,76 @@
+# 依赖目录
+node_modules/
+dist/
+*.log
+
+# 环境变量文件（包含敏感信息）
+.env
+.env.local
+.env.*.local
+*.env
+
+# 数据库备份文件（包含敏感数据）
+database_backups/
+*.sql.gz
+*.tar.gz
+dumpipa_backup_*.tar.gz
+
+# 日志文件
+logs/
+*.log
+
+# 临时文件
+temp/
+tmp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE 文件
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# 上传文件
+uploads/
+downloads/
+
+# 证书文件
+*.p12
+*.mobileprovision
+*.cer
+*.cert
+
+# 敏感配置文件
+config/config.php
+*.key
+*.pem
+
+# 编译输出
+*.o
+*.a
+*.so
+*.dylib
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+
+# 其他
+*.pid
+*.seed
+*.pid.lock
+
+# pnpm
+.pnpm-store/
